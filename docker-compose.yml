@@ -16,6 +16,7 @@ services:
     depends_on:
       - postgres
     entrypoint: ./entrypoint.sh
+    command: "bin/dev"
 
   postgres:
     image: postgres
