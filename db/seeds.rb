@@ -1,7 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# users
+
+p 'Inciando seeds'
+
+User.create(name: 'Wladimir Souza', username: 'WladimirOSZ', email: 'user@gmail.com', password: 'password');
+User.create(name: 'Bruno Schreiber', username:'flutterGOD', email: 'bruno@gmail.com', password: 'password');
+User.create(name: 'Beatriz Oliveira Pinheiro', username: 'BatrizMGL', email: 'bea@gmail.com', password: 'password');
+User.create(name: 'Gustavo Muito Cultura', username:'teinaFRANGO' ,email: 'gus@gmail.com', password: 'password');
+
+Post.create(description: 'Post numero 1, esse é um post. O Número é 1.', user_id: 1);
+Post.create(description: 'Post numero 2, esse é um post. O Número é 2.', user_id: 2);
+Post.create(description: 'Post numero 3, esse é um post. O Número é 3.', user_id: 3);
+
+p 'Finalizando seeds'
